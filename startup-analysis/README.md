@@ -17,8 +17,3 @@ Python, pandas, numpy, matplotlib, seaborn, SQL, Jupyter Notebook
 2. Funding analysis
 3. Company outcome analysis
 4. Visualization and insights
-
-## Key Findings
-- Technology startups attracted the largest investments
-- Acquired companies generally received more funding
-- Investment activity varied across industries
