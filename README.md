@@ -1,7 +1,7 @@
 ## Irina Lapteva
 ## Data Analytics Portfolio
 
-Junior Data Analyst with 10+ years of experience in media analytics and analytical reporting. Transitioning into data analytics with hands-on experience in SQL, Python, statistical analysis, dashboards, and A/B testing.
+Data Analyst with 10+ years of experience in media analytics and analytical reporting. Transitioning into data analytics with hands-on experience in SQL, Python, statistical analysis, dashboards, and A/B testing.
 
 ## Tools
 - SQL
