@@ -1,11 +1,4 @@
-/* Проект первого модуля: анализ данных для агентства недвижимости
- * Часть 2. Решаем ad hoc задачи
- * 
- * Автор: Ирина Лаптева
- * Дата: 22.10.25
-*/
-
-
+/* Анализ данных для агентства недвижимости
 
 -- Задача 1: Время активности объявлений
 -- Определим аномальные значения (выбросы) по значению перцентилей:
@@ -29,8 +22,7 @@ filtered_id AS(
         AND ((ceiling_height < (SELECT ceiling_height_limit_h FROM limits)
             AND ceiling_height > (SELECT ceiling_height_limit_l FROM limits)) OR ceiling_height IS NULL)
     ),
--- Продолжите запрос здесь
--- Используйте id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
+-- Используем id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
 -- СПб и тип "город"
 spb AS (
   SELECT city_id AS spb_id
@@ -116,8 +108,7 @@ filtered_id AS(
         AND ((ceiling_height < (SELECT ceiling_height_limit_h FROM limits)
             AND ceiling_height > (SELECT ceiling_height_limit_l FROM limits)) OR ceiling_height IS NULL)
     ),
--- Продолжите запрос здесь
--- Используйте id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
+-- Используем id объявлений (СТЕ filtered_id), которые не содержат выбросы при анализе данных
 -- База: только города (type_id = 'F8EM'), период 2015–2018, цена за м²
 base AS (
   SELECT
