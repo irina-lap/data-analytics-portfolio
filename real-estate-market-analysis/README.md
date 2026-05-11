@@ -1,3 +1,9 @@
+## Dashboard
+
+Interactive dashboard created in Yandex DataLens.
+
+[Open Dashboard]((https://datalens.yandex/4e5iw7v322eip))
+
 Анализ данных для агентства недвижимости
 
 
