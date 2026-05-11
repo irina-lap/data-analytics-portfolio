@@ -1,3 +1,17 @@
+## Dashboard
+
+Interactive dashboard created in Yandex DataLens for ticket sales and user activity analysis.
+
+The dashboard includes:
+- revenue dynamics;
+- order and customer metrics;
+- average check analysis;
+- event category performance;
+- device segmentation;
+- regional analysis.
+
+[Open Dashboard](https://datalens.yandex/hjagqqo0frzy1)
+
 # Yandex Afisha Analysis
 
 ## Overview
