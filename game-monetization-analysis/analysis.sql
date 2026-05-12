@@ -2,23 +2,18 @@
  * Цель проекта: изучить влияние характеристик игроков и их игровых персонажей 
  * на покупку внутриигровой валюты «райские лепестки», а также оценить 
  * активность игроков при совершении внутриигровых покупок
- * 
- * Автор: Ирина Лаптева
- * Дата: 01.10.25
 */
 
 -- Часть 1. Исследовательский анализ данных
 -- Задача 1. Исследование доли платящих игроков
 
 -- 1.1. Доля платящих пользователей по всем данным:
--- Напишите ваш запрос здесь
 SELECT COUNT(DISTINCT id) AS total_users,
 COUNT(DISTINCT CASE WHEN payer = 1 THEN id END) AS paying_users,
 AVG(payer::numeric) AS payers_share
 FROM users;
 
 -- 1.2. Доля платящих пользователей в разрезе расы персонажа:
--- Напишите ваш запрос здесь
 SELECT r.race AS race,
 COUNT(CASE WHEN u.payer = 1 THEN 1 END) AS paying_users,    
 COUNT(*) AS total_users,
@@ -29,7 +24,6 @@ GROUP BY r.race;
 
 -- Задача 2. Исследование внутриигровых покупок
 -- 2.1. Статистические показатели по полю amount:
--- Напишите ваш запрос здесь
 SELECT COUNT(*) AS total_purchases,  
 SUM(amount) AS total_amount,
 MIN(amount) AS min_amount,
@@ -40,13 +34,11 @@ STDDEV_SAMP(amount) AS stddev_amount
 FROM events;
 
 -- 2.2: Аномальные нулевые покупки:
--- Напишите ваш запрос здесь
 SELECT COUNT(*) FILTER (WHERE amount = 0) AS zero_purchases,
 (COUNT(*) FILTER (WHERE amount = 0))::numeric / COUNT(*) AS zero_share
 FROM events;
 
 -- 2.3: Популярные эпические предметы:
--- Напишите ваш запрос здесь
 SELECT i.game_items,
 COUNT(*) AS sales_cnt,
 COUNT(*)::float / SUM(COUNT(*)) OVER () AS sales_share,
@@ -61,7 +53,6 @@ ORDER BY buyers_share DESC, sales_cnt DESC, i.game_items;
 
 -- Часть 2. Решение ad hoc-задачbи
 -- Задача: Зависимость активности игроков от расы персонажа:
--- Напишите ваш запрос здесь
 WITH reg AS (SELECT u.race_id, r.race,
 COUNT(DISTINCT u.id) AS registered_users
 FROM users u
