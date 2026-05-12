@@ -1,4 +1,4 @@
-## Irina Lapteva
+## CV
 ## Data Analytics Portfolio
 
 Data Analyst with hands-on experience in SQL, Python, statistical analysis, dashboards, and A/B testing. 
