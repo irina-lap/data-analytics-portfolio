@@ -12,6 +12,9 @@ Data Analyst with 10+ years of experience in media analytics and analytical repo
 
 ## Projects
 
+### game-monetization-analysis
+Analysis of player monetization, in-game purchases, and user behavior patterns in a fantasy game, including segmentation and epic item purchase analysis.
+
 ### recommendation-system-ab-test
 Analysis of A/B test results for a recommendation system, including statistical significance testing and user behavior analysis.
 
