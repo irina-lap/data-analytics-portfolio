@@ -1,7 +1,7 @@
 /* Project "Darkwood Secrets"
  * Project goal: analyze how player and character attributes influence
- * purchases of the in-game currency "Heavenly Petals" and evaluate
- * player activity related to in-game purchases
+ purchases of the in-game currency "Heavenly Petals" and evaluate
+ player activity related to in-game purchases
 */
 
 -- Part 1. Exploratory Data Analysis
