@@ -1,79 +1,99 @@
-# Анализ монетизации игроков в фэнтези-игре
+# Game Monetization Analysis
 
-## Обзор проекта
+## Project Overview
 
-Проект посвящён анализу поведения игроков и внутриигровых покупок в фэнтези-игре.
-Основная цель — изучить влияние характеристик игроков и игровых персонажей на покупку внутриигровой валюты и эпических предметов, а также оценить различия в активности игроков.
+This project focuses on analyzing player behavior and in-game purchases in a fantasy game.
 
-## Задачи
+The main goal was to study how player and character attributes influence purchases of in-game currency and epic items, as well as evaluate differences in player purchasing activity.
 
-- Проанализировать долю платящих игроков
-- Изучить внутриигровые покупки и их стоимость
-- Выявить популярные эпические предметы
-- Исследовать различия в покупательской активности между расами персонажей
-- Сформулировать рекомендации для маркетинговой команды
+## Objectives
 
-## Этапы анализа
+- Analyze the share of paying players
+- Study in-game purchases and their cost
+- Identify the most popular epic items
+- Explore differences in purchasing activity between character races
+- Provide recommendations for the marketing team
 
-1. Исследовательский анализ данных
-2. Анализ внутриигровых покупок
-3. Сегментация игроков
-4. Ad hoc анализ
-5. Подготовка выводов и рекомендаций
+## Analysis Workflow
 
-## Проект «Секреты Темнолесья»
+1. Exploratory data analysis
+2. In-game purchase analysis
+3. Player segmentation
+4. Ad hoc analysis
+5. Preparation of conclusions and recommendations
 
-1. Результаты исследовательского анализа данных:
-1.1. Какая доля платящих игроков характерна для всей игры и как раса персонажа влияет на изменение этого показателя?
+## Darkwood Secrets Project
 
-В игре зарегистрировано чуть больше 22 тысяч игроков, из которых почти 4 тысячи совершают платежи. Доля платящих пользователей составляет примерно 18% от общей базы игроков (примерно каждый шестой игрок вносит реальные деньги в игру).
-В разрезе рас доля платящих игроков колеблется от 17% до 19%: минимальная у эльфов и ангелов (17%), максимальная у демонов (19%). В целом различия незначительные.
+### 1. Exploratory Data Analysis Results
 
-1.2. Сколько было совершено внутриигровых покупок и что можно сказать об их стоимости (минимум и максимум, есть ли различие между средним значением и медианой, какой разброс данных)?
+#### 1.1. Share of Paying Players
 
-В игре было совершено 1 307 678 покупок на общую сумму около 686,6 млн. Стоимость отдельных покупок варьируется от 0 до почти 486,6 тыс. 
-Средняя покупка составляет примерно 526, а медиана - около 75, что указывает на то, что большинство транзакций невелики.
-Стандартное отклонение высокое (около 2 517), что говорит о сильном разбросе: изредка встречаются крупные траты, которые существенно повышают среднее значение.
+The game has slightly more than 22,000 registered players, with nearly 4,000 making purchases. Paying users account for approximately 18% of the total player base (roughly every sixth player spends real money in the game).
 
-1.3. Есть ли аномальные покупки по стоимости?
+By race, the share of paying players ranges from 17% to 19%:
+- lowest among Elves and Angels (17%);
+- highest among Demons (19%).
 
-В базе встречаются покупки с нулевой стоимостью, всего их 907 (0,07%). Такие записи можно рассматривать как единичные аномалии. В дальнейшем они не будут учитываться, так как не приносят ценности для анализа внутриигровой экономики.
+Overall, the differences are relatively small.
 
-1.4. Есть ли среди эпических предметов популярные, которые покупают чаще всего? 
+---
 
-Наибольшую популярность среди эпических предметов имеет Book of Legends (77% всех покупок). Его хотя бы раз приобрели около 88% всех покупателей.
-Вторым по популярности идёт Bag of Holding (21% покупок), с охватом почти 87% покупателей.
-Все остальные предметы заметно уступают лидерам: их доля в покупках составляет не более 1%, а доля игроков, купивших их хотя бы раз, не превышает 12%.
+#### 1.2. In-Game Purchases Analysis
 
-3. Результаты решения ad hoc задачи
+A total of 1,307,678 purchases were made in the game, generating approximately 686.6 million in revenue.
 
-Исследована зависимость активности игроков по совершению внутриигровых покупок от расы персонажа. Проведён анализ покупки эпических предметов для разных рас и проверена гипотеза о том, что прохождение игры за персонажей разных рас требует примерно одинакового количества покупок эпических предметов.
+The value of individual purchases ranges from 0 to nearly 486.6 thousand.
 
-Склонность игроков разных рас совершать покупки примерно одинакова: доля тех, кто хотя бы раз купил эпический предмет, составляет около 60 - 63% от числа зарегистрированных, а доля платящих среди этих покупателей 16 - 20%. 
-Но интенсивность покупок различается значительно. Если у демонов и эльфов среднее число транзакций на одного покупателя составляет около 78 - 79, то у людей этот показатель превышает 121. 
-По суммарным тратам разброс также заметен: минимальные значения наблюдаются у демонов и орков (около 41 - 42 тысяч), а максимальные у нортманов (свыше 62,5 тысяч). 
-Таким образом, хотя вероятность того, что игрок начнёт покупать, примерно одинакова для всех рас, активность тех, кто уже вовлекся в процесс, сильно различается. Это означает, что гипотеза о равном количестве покупок для всех рас не подтверждается.
+- Average purchase amount: ~526
+- Median purchase amount: ~75
 
-5. Общие выводы и рекомендации
+This indicates that most transactions are relatively small.
 
-Общие выводы:
+The standard deviation is high (~2,517), suggesting significant variability: rare large purchases substantially increase the average value.
 
-●	Базовый уровень монетизации:
-Платящих игроков 17 - 18% от всех зарегистрированных. В разрезе рас доля платящих почти не различается (17 - 19%), то есть сама по себе раса слабо влияет на факт доната.
+---
 
-●	Склонность vs интенсивность:
-Доля тех, кто вообще покупает эпики, у всех рас близка (60 - 63% от зарегистрированных), но интенсивность после начала покупок заметно разная: по числу покупок лидируют Human (121 покупка/покупатель), по суммарным тратам  - Northman (62,5k на покупателя), а Demon/Elf/Orc - ниже (41 - 42k и 78 - 82 покупок). Гипотеза «всем расам нужно примерно одинаковое количество эпиков» не подтверждается.
+#### 1.3. Anomalous Purchases
 
-●	Структура покупок:
-Рынок крайне концентрирован: Book of Legends даёт 77% всех продаж и покупался 88% покупателей; Bag of Holding - ещё 21% и 87% охвата. Остальные предметы - единицы процентов.
+The dataset contains 907 purchases with zero cost (0.07%).
 
-●	Разброс цен:
-Средний чек 526, медиана 75 - большинство покупок мелкие, но есть редкие крупные траты, сильно поднимающие среднее (std 2 517). Нулевые покупки встречаются редко (0,07%).
+These records can be treated as isolated anomalies and were excluded from further analysis because they do not provide value for analyzing the in-game economy.
 
-Рекомендации для маркетинга:
+---
 
-●	Снизить зависимость экономики от 1 - 2 ключевых предметов и попробовать повысить интерес к остальным.
-●	Учитывать различия в поведении игроков разных рас: в целом склонность покупать одинакова, но интенсивность трат отличается.
-●	Продолжать мониторинг ключевых метрик монетизации и тестировать новые предложения для разных сегментов игроков.
+#### 1.4. Popular Epic Items
 
+The most popular epic item is **Book of Legends**, accounting for 77% of all purchases. About 88% of buyers purchased this item at least once.
 
+The second most popular item is **Bag of Holding**:
+- 21% of purchases
+- purchased by nearly 87% of buyers
+
+All other items significantly lag behind the leaders:
+- each accounts for no more than 1% of purchases;
+- no more than 12% of players purchased them at least once.
+
+---
+
+### 2. Ad Hoc Analysis Results
+
+The project explored the relationship between player purchasing activity and character race.
+
+The analysis focused on epic item purchases across different races and tested the hypothesis that completing the game with different races requires approximately the same number of epic item purchases.
+
+The tendency to make purchases is relatively similar across races:
+- around 60–63% of registered players purchased epic items at least once;
+- 16–20% of those players were paying users.
+
+However, purchase intensity differs significantly.
+
+- Demons and Elves average around 78–79 transactions per buyer;
+- Humans exceed 121 transactions per buyer.
+
+Total spending also varies:
+- lowest among Demons and Orcs (~41–42k);
+- highest among Northmen (over 62.5k).
+
+Thus, while the probability of starting to make purchases is similar across races, the activity level of engaged players differs substantially.
+
+As a result, the hypothesis that all races require approximately the same number of epic item purchases is not confirmed.
