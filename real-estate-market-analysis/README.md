@@ -22,8 +22,6 @@ This indicates that some properties are sold relatively quickly within one to th
 
 This pattern is typical for both regions and reflects a common trend: attractive apartments sell quickly, while less appealing properties remain on the market longer.
 
----
-
 ## Property Characteristics Affecting Listing Duration
 
 In Saint Petersburg, smaller and more affordable apartments sell the fastest:
@@ -48,8 +46,6 @@ Additional regional differences:
 - in the Leningrad region, buyers more often purchase apartments in five-story buildings typical of Soviet-era housing;
 - in Saint Petersburg, buyers prefer taller buildings and newer developments (9–12 floors).
 
----
-
 ## Regional Differences
 
 Saint Petersburg properties are generally:
@@ -68,15 +64,11 @@ No strong relationship between price and selling speed was identified there, alt
 
 Overall, the Leningrad region market is less dynamic than the Saint Petersburg market.
 
----
-
 # Task 2. Listing Seasonality
 
 The client wanted to understand seasonal trends in the real estate market of Saint Petersburg and the Leningrad region in order to identify periods of increased seller and buyer activity.
 
 This information can help optimize marketing campaigns and determine the best time to enter the market.
-
----
 
 ## Seasonal Activity Trends
 
@@ -90,15 +82,11 @@ Starting in spring, the market gradually recovers:
 
 Sales peak during October and November, followed by a decline in December.
 
----
-
 ## Listing Publication vs Sales Activity
 
 Supply (new listings) and demand (sales activity) generally follow similar trends, although buyer activity slightly lags behind the growth in listings.
 
 The most active market period is autumn, while winter and the beginning of the year show the lowest activity.
-
----
 
 ## Seasonal Changes in Price and Apartment Size
 
@@ -116,8 +104,6 @@ In general:
 - during spring and summer (April–July), average apartment size slightly decreases, likely due to increased demand for compact apartments.
 
 By autumn, average values stabilize again.
-
----
 
 # General Conclusions and Recommendations
 
@@ -146,8 +132,6 @@ Average apartment size remains relatively stable during the year, although buyer
 As a result:
 - autumn is the most active and profitable season for transactions;
 - spring and the beginning of the year are characterized by lower activity and lower prices.
-
----
 
 # Recommendations
 
