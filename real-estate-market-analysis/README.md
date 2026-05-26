@@ -4,8 +4,6 @@ Interactive dashboard created in Yandex DataLens.
 
 [Open Dashboard](https://datalens.yandex/4e5iw7v322eip)
 
-# Real Estate Market Analysis
-
 ## Ad Hoc Analysis
 
 # Task 1. Listing Activity Duration
