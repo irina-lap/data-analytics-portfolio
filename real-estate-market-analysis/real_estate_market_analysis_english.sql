@@ -128,19 +128,19 @@ base AS (
 months AS (
   SELECT
     id,
-    EXTRACT(MONTH FROM first_day_exposition)::int AS pub_month,  -- только номер месяца публикации
+    EXTRACT(MONTH FROM first_day_exposition)::int AS pub_month,  -- publication month number only
     CASE
       WHEN days_exposition IS NOT NULL THEN
         CASE
           WHEN (first_day_exposition + (days_exposition::int) * INTERVAL '1 day') < DATE '2019-01-01'
           THEN EXTRACT(MONTH FROM (first_day_exposition + (days_exposition::int) * INTERVAL '1 day'))::int
         END
-    END AS sold_month,                                            -- только номер месяца снятия
+    END AS sold_month,                                            -- removal month number only
     price_per_m2,
     total_area
   FROM base
 ),
--- Calculate statistics by publication month (без учёта года)
+-- Calculate statistics by publication month (without year consideration)
 pub_stats AS (
   SELECT
     pub_month AS month,
@@ -150,7 +150,7 @@ pub_stats AS (
   FROM months
   GROUP BY pub_month
 ),
--- Calculate statistics by removal month (без учёта года)
+-- Calculate statistics by removal month (without year consideration)
 sold_stats AS (
   SELECT
     sold_month AS month,
