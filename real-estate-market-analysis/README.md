@@ -4,47 +4,157 @@ Interactive dashboard created in Yandex DataLens.
 
 [Open Dashboard](https://datalens.yandex/4e5iw7v322eip)
 
-Анализ данных для агентства недвижимости
+# Real Estate Market Analysis
 
+## Ad Hoc Analysis
 
-Решаем ad hoc задачи 
+# Task 1. Listing Activity Duration
 
-Задача 1. Время активности объявлений
+To develop an effective business strategy for the real estate market, the client needed to identify the most attractive real estate segments in Saint Petersburg and the cities of the Leningrad region based on listing activity duration.
 
-Чтобы спланировать эффективную бизнес-стратегию на рынке недвижимости, заказчику нужно определить — по времени активности объявления — самые привлекательные для работы сегменты недвижимости Санкт-Петербурга и городов Ленинградской области.
-Проанализируйте результаты и опишите их. Ответы на такие вопросы:
-1. Какие категории объявлений являются самыми распространёнными в Санкт-Петербурге и городах Ленинградской области?
-В Санкт-Петербурге и городах Ленинградской области больше всего объявлений относится к категориям «до трех месяцев» и «более полугода». Это значит, что часть объектов недвижимости продается достаточно быстро, примерно за один-три месяца, но при этом значительная доля предложений долго остаётся на рынке. Такая ситуация характерна для обоих регионов и отражает общую тенденцию: востребованные квартиры уходят быстро, а менее привлекательные по цене или состоянию дольше ищут покупателя.
-2. Какие характеристики недвижимости, включая площадь недвижимости, среднюю стоимость квадратного метра, количество комнат и балконов и другие параметры, влияют на время активности объявлений? Как эти зависимости варьируют между регионами?
-В Санкт-Петербурге быстрее всего продаются более дешевые и компактные квартиры: с низкой средней ценой за квадратный метр (около 109–111 тыс. руб.) и площадью до 56 м². По мере роста стоимости и площади (до 115 тыс. руб. за м² и около 60 м²) объекты переходят в категории с более долгим временем продажи.
-В Ленинградской области прослеживается закономерность по площади: чем меньше квартира, тем быстрее она продаётся. Объявления с небольшой площадью (около 49–51 м²) чаще попадают в сегменты «до месяца» и «до трех месяцев», тогда как более просторные квартиры (около 55–63 м² ) чаще остаются на рынке дольше полугода. Что касается связи между ценой за квадратный метр и скоростью продажи, здесь четкая закономерность не прослеживается.
-И в Санкт-Петербурге, и в Ленинградской области наиболее продаваемыми являются двухкомнатные квартиры с одним балконом, независимо от сегмента времени продажи.
-В Ленинградской области чаще всего покупают квартиры в пятиэтажных домах, что характерно для типового жилья советского периода. В Санкт-Петербурге, наоборот, предпочтение отдаётся более высоким домам, новостройкам (9 - 12 этажей).
-3. Есть ли различия между недвижимостью Санкт-Петербурга и Ленинградской области по полученным результатам?
-В Санкт-Петербурге недвижимость дороже, компактнее и чаще располагается в многоэтажных домах. Здесь быстрее продаются более доступные по цене квартиры, а дорогие и просторные объекты дольше остаются на рынке.
-В Ленинградской области, напротив, жильё дешевле, чаще представлено в пятиэтажных домах и имеет большую площадь. Здесь чёткой зависимости между ценой и скоростью продажи нет, но более компактные квартиры всё же уходят быстрее. В целом рынок области менее динамичен, чем петербургский.
+## Most Common Listing Categories
 
-Задача 2. Сезонность объявлений
+In both Saint Petersburg and the cities of the Leningrad region, the majority of listings fall into the categories:
+- up to three months;
+- more than six months.
 
-Заказчику важно понять сезонные тенденции на рынке недвижимости Санкт-Петербурга и Ленинградской области — то есть для всего региона, чтобы выявить периоды с повышенной активностью продавцов и покупателей недвижимости. Это поможет спланировать маркетинговые кампании и выбрать сроки для выхода на рынок.
-Проанализируйте результаты и опишите их. Ответы на такие вопросы:
-1. В какие месяцы наблюдается наибольшая активность в публикации объявлений о продаже недвижимости? А в какие — по снятию? Это показывает динамику активности покупателей.
-В начале года наблюдается спад активности, как по количеству размещённых объявлений (продаж), так и по покупкам. С весны рынок постепенно оживляется: в июне-июле виден рост спроса, а с августа начинается устойчивое увеличение активности и у продавцов, и у покупателей. Пик продаж приходится на октябрь-ноябрь, после чего к декабрю наблюдается снижение.
-2. Совпадают ли периоды активной публикации объявлений и периоды, когда происходит повышенная продажа недвижимости (по месяцам снятия объявлений)?
-Предложение (размещение объявлений) и спрос (покупки) движутся схожими темпами, но покупательская активность обычно немного отстаёт от роста числа объявлений. Наиболее активный период рынка - осень, наименее - зима и начало года.
-3. Как сезонные колебания влияют на среднюю стоимость квадратного метра и среднюю площадь квартир? Что можно сказать о зависимости этих параметров от месяца?
-Средняя стоимость квадратного метра демонстрирует умеренные сезонные колебания как для продаж, так и для покупок. В начале года (январь-март) цены немного снижаются, достигая минимума весной (апрель-май), после чего начинается постепенный рост, который продолжается до конца лета. Пик цен приходится на сентябрь-октябрь, после чего значения стабилизируются.
-Средняя площадь продаваемых квартир остаётся относительно стабильной в течение года, колебания незначительные (в пределах 2-3 м²). В целом продавцы выставляют на рынок квартиры чуть большего метража, чем те, которые в итоге покупаются. Весной и летом (апрель-июль) наблюдается небольшое снижение средней площади и у продаваемых, и у покупаемых объектов, что может быть связано с ростом спроса на более компактные квартиры. Осенью значения снова выравниваются.
-Общие выводы и рекомендации
-Рынок недвижимости Санкт-Петербурга и Ленинградской области демонстрирует чёткую сезонность и различия между регионами. Большинство сделок совершается либо быстро (до трех месяцев), либо после длительного периода экспозиции (более полугода). В Петербурге активнее продаются более компактные и доступные квартиры, в Ленинградской области, жилье большего метража и меньшей стоимости.
-Рынок недвижимости демонстрирует выраженную сезонность. Активность продавцов и покупателей минимальна в начале года и постепенно растёт к осени, достигая пика в октябре-ноябре. Осенью также наблюдается рост цен за квадратный метр, что связано с повышенным спросом. Средняя площадь квартир остаётся стабильной в течение года: покупатели в целом выбирают объекты немного меньшего метража, чем предлагается на рынке. Таким образом, осень является наиболее активным и выгодным периодом для сделок, а весна и начало года - временем снижения активности и цен.
+This indicates that some properties are sold relatively quickly within one to three months, while a significant share of listings remains on the market for a long time.
 
-Рекомендации:
-•	Планировать активные рекламные кампании на осень (сентябрь-ноябрь) в пик спроса и роста цен.
-•	В начале года (февраль-март) проводить акции и спецпредложения, чтобы стимулировать продажи в период спада.
-•	Весной и летом продвигать компактные и недорогие квартиры, в этот период растёт спрос на жильё эконом-класса.
-•	Основные бюджеты направлять на двухкомнатные квартиры, самый востребованный формат.
-•	В Петербурге делать акцент на современные новостройки и выгодные условия покупки;
-в Ленинградской области - на доступность и комфорт малоэтажного жилья.
-•	Комбинировать подходы: продвигать востребованные объекты для привлечения трафика и поддерживать интерес к менее ликвидным позициям через акции и специальные предложения.
+This pattern is typical for both regions and reflects a common trend: attractive apartments sell quickly, while less appealing properties remain on the market longer.
 
+---
+
+## Property Characteristics Affecting Listing Duration
+
+In Saint Petersburg, smaller and more affordable apartments sell the fastest:
+- lower average price per square meter (~109–111k RUB);
+- area up to 56 m².
+
+As price and apartment size increase:
+- price per square meter rises to ~115k RUB;
+- apartment area increases to ~60 m²;
+- listings move into longer selling-time categories.
+
+In the Leningrad region, apartment size shows the clearest relationship with selling speed:
+- smaller apartments (~49–51 m²) are more likely to sell within one to three months;
+- larger apartments (~55–63 m²) often remain on the market for more than six months.
+
+No clear relationship between price per square meter and selling speed was identified in the Leningrad region.
+
+In both regions:
+- two-room apartments with one balcony are the most commonly sold properties regardless of selling duration category.
+
+Additional regional differences:
+- in the Leningrad region, buyers more often purchase apartments in five-story buildings typical of Soviet-era housing;
+- in Saint Petersburg, buyers prefer taller buildings and newer developments (9–12 floors).
+
+---
+
+## Regional Differences
+
+Saint Petersburg properties are generally:
+- more expensive;
+- more compact;
+- located in high-rise buildings.
+
+Affordable apartments sell faster, while larger and more expensive properties stay on the market longer.
+
+In contrast, properties in the Leningrad region are:
+- cheaper;
+- larger;
+- more commonly located in low-rise buildings.
+
+No strong relationship between price and selling speed was identified there, although smaller apartments still tend to sell faster.
+
+Overall, the Leningrad region market is less dynamic than the Saint Petersburg market.
+
+---
+
+# Task 2. Listing Seasonality
+
+The client wanted to understand seasonal trends in the real estate market of Saint Petersburg and the Leningrad region in order to identify periods of increased seller and buyer activity.
+
+This information can help optimize marketing campaigns and determine the best time to enter the market.
+
+---
+
+## Seasonal Activity Trends
+
+At the beginning of the year, market activity declines:
+- fewer property listings are published;
+- buyer activity also decreases.
+
+Starting in spring, the market gradually recovers:
+- demand increases in June and July;
+- from August onward, both seller and buyer activity steadily rise.
+
+Sales peak during October and November, followed by a decline in December.
+
+---
+
+## Listing Publication vs Sales Activity
+
+Supply (new listings) and demand (sales activity) generally follow similar trends, although buyer activity slightly lags behind the growth in listings.
+
+The most active market period is autumn, while winter and the beginning of the year show the lowest activity.
+
+---
+
+## Seasonal Changes in Price and Apartment Size
+
+Average price per square meter demonstrates moderate seasonal fluctuations:
+- prices slightly decrease in January–March;
+- reach their minimum in April–May;
+- gradually increase through summer;
+- peak in September–October before stabilizing.
+
+Average apartment size remains relatively stable throughout the year:
+- fluctuations are minor (within 2–3 m²).
+
+In general:
+- listed apartments tend to be slightly larger than purchased apartments;
+- during spring and summer (April–July), average apartment size slightly decreases, likely due to increased demand for compact apartments.
+
+By autumn, average values stabilize again.
+
+---
+
+# General Conclusions and Recommendations
+
+The real estate market in Saint Petersburg and the Leningrad region demonstrates:
+- strong seasonality;
+- significant regional differences.
+
+Most transactions occur either:
+- quickly (within three months);
+- or after long exposure periods (more than six months).
+
+In Saint Petersburg:
+- compact and affordable apartments sell more actively.
+
+In the Leningrad region:
+- larger and cheaper properties dominate.
+
+Market activity is lowest at the beginning of the year and gradually increases toward autumn, peaking in October–November.
+
+Autumn also shows:
+- increased price per square meter;
+- stronger demand.
+
+Average apartment size remains relatively stable during the year, although buyers generally prefer slightly smaller apartments than those offered on the market.
+
+As a result:
+- autumn is the most active and profitable season for transactions;
+- spring and the beginning of the year are characterized by lower activity and lower prices.
+
+---
+
+# Recommendations
+
+- Plan major advertising campaigns for autumn (September–November), during peak demand and price growth.
+- Launch promotions and special offers in February–March to stimulate demand during slower periods.
+- Focus spring and summer marketing on compact and affordable apartments, as demand for economy-class housing increases during this period.
+- Prioritize two-room apartments, the most востребованный housing format.
+- In Saint Petersburg, emphasize modern residential developments and favorable purchasing conditions.
+- In the Leningrad region, focus on affordability and comfortable low-rise housing.
+- Combine strategies by promoting high-demand properties to attract traffic while supporting less liquid properties through discounts and special offers.
